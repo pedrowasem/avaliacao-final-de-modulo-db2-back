@@ -2,13 +2,9 @@ import Notes from '../../models/notes.class';
 import { NotesRepository } from '../../repository';
 
 export type CreateNoteDTO = {
-	// id: string;
 	title: string;
 	description: string;
 	userId: string;
-	// createdAt: Date;
-	// favorite: boolean;
-	// stored: boolean;
 };
 
 export type CreateNoteModelDTO = {

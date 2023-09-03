@@ -1,4 +1,4 @@
-import { SignUserDTO } from '../usecases/Users';
+import { SignUserModelDTO } from '../usecases/Users';
 import { NotesDTO } from './notes.class';
 
 export type UserDTO = {
@@ -13,7 +13,7 @@ export default class User {
 	private _name: string;
 	private _password: string;
 
-	constructor(data: SignUserDTO) {
+	constructor(data: SignUserModelDTO) {
 		this._id = data.id;
 		this._name = data.name;
 		this._password = data.password;

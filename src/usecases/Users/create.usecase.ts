@@ -3,6 +3,11 @@ import { UserEntity } from '../../database/entities/user.entity';
 import { UserRepository } from '../../repository';
 
 export type SignUserDTO = {
+	name: string;
+	password: string;
+};
+
+export type SignUserModelDTO = {
 	id: string;
 	name: string;
 	password: string;
@@ -33,7 +38,6 @@ export class SignUser {
 		const hashedPassword = bcrypt.hashSync(this.#data.password, salt);
 
 		const newUser = await new UserRepository().create({
-			id: this.#data.id,
 			name: this.#data.name,
 			password: hashedPassword,
 		});
