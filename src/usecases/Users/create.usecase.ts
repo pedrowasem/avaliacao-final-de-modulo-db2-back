@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import { UserEntity } from '../../database/entities/user.entity';
+import { UserEntity } from '../../database/DBentities/user.entity';
 import { UserRepository } from '../../repository';
 
 export type SignUserDTO = {
