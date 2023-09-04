@@ -1,6 +1,6 @@
 import { FindOptionsWhere, ILike } from 'typeorm';
 import { pgHelper } from '../../database';
-import { NoteEntity } from '../../database/DBentities/note.entity';
+import { NoteEntity } from '../../database/entities/note.entity';
 import Notes from '../../models/notes.class';
 import { CreateNoteDTO, ListNotesFiltersDTO, UpdateNoteDTO } from '../../usecases/Notes';
 

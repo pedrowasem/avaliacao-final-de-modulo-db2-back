@@ -1,5 +1,5 @@
 import { pgHelper } from '../../database';
-import { UserEntity } from '../../database/DBentities/user.entity';
+import { UserEntity } from '../../database/entities/user.entity';
 import { SignUserDTO } from '../../usecases/Users';
 
 export class UserRepository {
